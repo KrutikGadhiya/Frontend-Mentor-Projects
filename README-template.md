@@ -40,8 +40,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KrutikGadhiya/Frontend-Mentor-Projects/tree/stats-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://krutikgadhiya.github.io/Frontend-Mentor-Projects/)
+- Solution URL: [solution URL](https://github.com/KrutikGadhiya/Frontend-Mentor-Projects/tree/stats-preview-card-component-main)
+- Live Site URL: [live site URL](https://krutikgadhiya.github.io/Frontend-Mentor-Projects/)
 
 ## My process
 
