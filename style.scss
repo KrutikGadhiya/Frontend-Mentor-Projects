@@ -1,0 +1,125 @@
+/* Primary Colors */
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral Colors */
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-grey: hsl(0, 0%, 95%);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 70%;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    // margin-top: 50%;
+  }
+}
+
+.card1 {
+  background: $bright-orange;
+  padding: 3em;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  @media screen and (max-width: 500px) {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5em;
+  }
+}
+.card2 {
+  background: $dark-cyan;
+  padding: 3em;
+}
+.card3 {
+  background: $very-dark-cyan;
+  padding: 3em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  @media screen and (max-width: 500px) {
+    border-top-right-radius: 0em;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+  }
+}
+
+.card1 h1,
+.card2 h1,
+.card3 h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: $very-light-grey;
+  padding-bottom: 2rem;
+}
+.card1 img,
+.card2 img,
+.card3 img {
+  padding-bottom: 2rem;
+}
+.card1 p,
+.card2 p,
+.card3 p {
+  color: $transparent-white;
+  font-family: "Lexend Deca", sans-serif;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+}
+.card1 button,
+.card2 button,
+.card3 button {
+  font-family: "Lexend Deca", sans-serif;
+  background: $very-light-grey;
+  outline: none;
+  border: 1px solid $transparent-white;
+  border-radius: 2em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.card1 button {
+  color: $bright-orange;
+  &:hover {
+    color: $very-light-grey;
+    background-color: $bright-orange;
+  }
+}
+.card2 button {
+  color: $dark-cyan;
+  &:hover {
+    color: $very-light-grey;
+    background: $dark-cyan;
+  }
+}
+.card3 button {
+  color: $very-dark-cyan;
+  &:hover {
+    color: $very-light-grey;
+    background-color: $very-dark-cyan;
+  }
+}
+.attribution {
+  font-size: 1.5em;
+  padding-top: 1em;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
